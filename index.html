@@ -1,0 +1,182 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gun Man - Anime Style Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #1b1f3b;
+      --primary: #ff4d6d;
+      --accent: #ffd166;
+      --text-light: #f0f0f0;
+      --text-muted: #bdbdbd;
+      --card-bg: #2e3351;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: var(--main-bg);
+      color: var(--text-light);
+      font-family: 'Orbitron', sans-serif;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: radial-gradient(circle, #ff4d6d 0%, #1b1f3b 100%);
+      color: #fff;
+      animation: popFade 1.2s ease-out;
+    }
+    header h1 {
+      font-size: 3em;
+      font-family: 'Press Start 2P', cursive;
+      color: #fff;
+      text-shadow: 2px 2px #000;
+    }
+    header p {
+      margin-top: 10px;
+      color: #ffd166;
+      font-size: 1em;
+      text-shadow: 1px 1px #000;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeSlideUp 1s ease forwards;
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    section:nth-of-type(2) { animation-delay: 0.4s; }
+    section:nth-of-type(3) { animation-delay: 0.7s; }
+    section:nth-of-type(4) { animation-delay: 1s; }
+    section:nth-of-type(5) { animation-delay: 1.3s; }
+
+    h2 {
+      color: var(--accent);
+      border-left: 5px solid var(--primary);
+      padding-left: 15px;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p, li {
+      font-size: 1em;
+      color: var(--text-muted);
+    }
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skills ul li {
+      background: var(--primary);
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-family: 'Press Start 2P', cursive;
+      box-shadow: 0 4px 12px rgba(255, 77, 109, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .skills ul li:hover {
+      transform: scale(1.1);
+    }
+    .projects .project {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--accent);
+      box-shadow: 0 0 20px rgba(255, 209, 102, 0.3);
+    }
+    .project h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #121428;
+      font-size: 0.9em;
+      color: #999;
+      border-top: 2px solid var(--primary);
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes popFade {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gun Man</h1>
+    <p>Group Buyer. Coder. Author.</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m Gun Man — a dynamic old telegram group buyer and owner/founder of tenjiku network, doing python and java coding as passion and hardwork and i am writing my own book which i will soon publish next year. I build brands, passion, and ideas with epic energy and pixel precision.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Group Buyer</li>
+      <li>Coder</li>
+      <li>Editor</li>
+      <li>Marketing</li>
+      <li>Digital Empire Building</li>
+      <li>Author</li>
+      <li>Direction</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Tenjiku Network</h3>
+      <p>A full-fledged anime news, dubbing, and creation network shaking the fandom space — stylish, fast, and fearless.</p>
+    </div>
+    <div class="project">
+      <h3>Group Buying</h3>
+      <p>I Am Buying Old Telegram Groups Of 2016-2023 i buy them in great prices better than your seller prices i am trusted and a genuine buyer buying ild yelegram groups from a longtime.</p>
+    </div>
+    <div class="project">
+      <h3>Dubbing Studio</h3>
+      <p>Launched an digital/online dubbing studio in 2017  with great dubbing and voiceover qualites, original OSTs, and bold, emotional narratives.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Contact Me If You Want Sell Your Old Useless Telegram Groups Of 2016-2023 in great prices with full trust<br>DM me at <a href="t.me/AGuyWithAGun">@AGuyWithAGun</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guy Cool. Designed in anime code & energy.</p>
+  </footer>
+</body>
+</html>
